@@ -394,10 +394,6 @@ body.light-mode .hero-banner {
 
 /* Responsive */
 @media (max-width: 1100px) {
-  .content-layout {
-    grid-template-columns: 1fr;
-  }
-
   .dashboard {
     grid-template-columns: 1fr;
   }
@@ -406,14 +402,47 @@ body.light-mode .hero-banner {
     display: none;
   }
 
+  .content-layout {
+    grid-template-columns: 1fr;
+  }
+
   .header {
-    padding: 20px;
     flex-direction: column;
-    gap: 20px;
-    align-items: flex-start;
+    gap: 18px;
+    padding: 20px;
+    align-items: stretch;
+  }
+
+  .header-right {
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .search-bar input {
     width: 100%;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .projects-grid,
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header-buttons {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .header-buttons button {
+    width: 100%;
+  }
+
+  .hero-banner h1 {
+    font-size: 26px;
   }
 }
