@@ -40,3 +40,26 @@ toggleBtn.addEventListener("click", () => {
     ? "☀️"
     : "🌙";
 });
+
+const stats = document.querySelectorAll(".stat-card h3");
+
+stats.forEach((stat) => {
+  const finalText = stat.innerText;
+
+  if (!isNaN(parseInt(finalText))) {
+    let count = 0;
+    const target = parseInt(finalText);
+
+    const update = () => {
+      count++;
+      stat.innerText = count + (finalText.includes("%") ? "%" : "+");
+
+      if (count < target) {
+        setTimeout(update, 30);
+      }
+    };
+
+    stat.innerText = "0";
+    update();
+  }
+});
