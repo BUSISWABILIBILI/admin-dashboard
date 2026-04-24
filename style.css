@@ -111,12 +111,12 @@ body {
 .header-buttons button {
   background: linear-gradient(135deg, #38bdf8, #6366f1);
   border: none;
-  padding: 10px 18px;
-  border-radius: 30px;
-  color: #fff;
+  padding: 12px 18px;
+  border-radius: 12px;
+  color: white;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
 
 .header-buttons button:hover {
