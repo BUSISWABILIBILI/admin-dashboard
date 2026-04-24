@@ -130,3 +130,38 @@ body {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
   border-color: #38bdf8;
 }
+
+/* Layout Split */
+.content-layout {
+  display: grid;
+  grid-template-columns: 2fr 320px;
+  gap: 30px;
+  align-items: start;
+}
+
+/* Right Panel */
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Widgets */
+.widget {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+}
+
+.widget h3 {
+  color: #38bdf8;
+  margin-bottom: 15px;
+}
+
+.widget p {
+  margin-bottom: 12px;
+  color: #cbd5e1;
+  line-height: 1.5;
+}
