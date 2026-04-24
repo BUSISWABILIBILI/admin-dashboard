@@ -385,6 +385,22 @@ body.light-mode .hero-banner {
   color: #94a3b8;
 }
 
+.header-buttons button,
+.card-actions a {
+  background: transparent;
+  border: 1px solid #334155;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.header-buttons button:hover,
+.card-actions a:hover {
+  border-color: #38bdf8;
+  color: #38bdf8;
+}
+
 /* Fade Animation */
 @keyframes fadeUp {
   from {
