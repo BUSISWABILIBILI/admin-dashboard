@@ -401,6 +401,18 @@ body.light-mode .hero-banner {
   color: #38bdf8;
 }
 
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.content-layout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 22px;
+}
+
 /* Fade Animation */
 @keyframes fadeUp {
   from {
