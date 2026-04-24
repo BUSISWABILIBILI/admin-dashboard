@@ -177,14 +177,15 @@ body {
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.04);
   padding: 25px;
-  border-radius: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
   transition: all 0.3s ease;
-  cursor: pointer;
-  min-height: 180px;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card h3 {
@@ -221,7 +222,7 @@ body {
 }
 
 .card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-6px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
   border-color: #38bdf8;
 }
