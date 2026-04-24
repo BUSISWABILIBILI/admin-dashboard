@@ -126,13 +126,20 @@ body {
 }
 
 .search-bar input {
-  width: 400px;
-  padding: 12px 18px;
-  border: none;
-  border-radius: 30px;
+  width: 420px;
+  max-width: 100%;
+  padding: 14px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
   background: #1e293b;
-  color: #fff;
+  color: white;
   outline: none;
+  transition: 0.3s;
+}
+
+.search-bar input:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.15);
 }
 
 .user-info {
