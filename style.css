@@ -356,12 +356,33 @@ body.light-mode .hero-banner {
   background: linear-gradient(90deg, #10b981, #059669);
 }
 
-/* Better Cards */
 .card,
 .widget,
-.stat-card,
-.hero-banner {
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+.stat-card {
+  background: #0c0c10;
+  border: 1px solid #1f1f25;
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: none;
+}
+
+.card:hover,
+.widget:hover,
+.stat-card:hover {
+  border-color: #334155;
+  transform: translateY(-3px);
+}
+
+.card h3,
+.widget h3 {
+  color: #f8fafc;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.card p,
+.widget p {
+  color: #94a3b8;
 }
 
 /* Fade Animation */
