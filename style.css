@@ -237,7 +237,6 @@ body {
   padding: 25px;
   border-radius: 18px;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(10px);
 }
 
 .widget h3 {
@@ -304,7 +303,6 @@ body.light-mode .hero-banner {
   padding: 25px;
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(12px);
   transition: all 0.3s;
   animation: fadeUp 0.8s ease;
 }
