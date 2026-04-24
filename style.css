@@ -32,6 +32,31 @@ body {
   margin-bottom: 40px;
 }
 
+/* Hero Banner */
+.hero-banner {
+  background: linear-gradient(135deg, #1e293b, #111827);
+  padding: 30px;
+  border-radius: 22px;
+  margin-bottom: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+.hero-banner p {
+  color: #94a3b8;
+  margin-bottom: 8px;
+}
+
+.hero-banner h1 {
+  font-size: 34px;
+  margin-bottom: 8px;
+}
+
+.hero-banner span {
+  color: #38bdf8;
+  font-weight: 500;
+}
+
 .sidebar ul {
   list-style: none;
   display: flex;
@@ -43,11 +68,14 @@ body {
   cursor: pointer;
   font-weight: 500;
   transition: all 0.3s ease;
+  padding: 10px 14px;
+  border-radius: 12px;
 }
 
 .sidebar ul li:hover {
+  background: rgba(56, 189, 248, 0.12);
   color: #38bdf8;
-  transform: translateX(5px);
+  transform: translateX(6px);
 }
 
 /* Header */
@@ -58,6 +86,33 @@ body {
   align-items: center;
   padding: 0 40px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.header-buttons button {
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  border: none;
+  padding: 10px 18px;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.header-buttons button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(59, 130, 246, 0.35);
 }
 
 .search-bar input {
@@ -164,4 +219,9 @@ body {
   margin-bottom: 12px;
   color: #cbd5e1;
   line-height: 1.5;
+}
+
+.widget:hover,
+.card:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.35);
 }
