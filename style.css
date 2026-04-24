@@ -180,6 +180,29 @@ body {
   line-height: 1.6;
 }
 
+/* Card Buttons */
+.card-actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+}
+
+.card-actions a {
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  background: #1e293b;
+  color: white;
+  transition: 0.3s;
+}
+
+.card-actions a:hover {
+  background: #38bdf8;
+  transform: translateY(-2px);
+}
+
 .card:hover {
   transform: translateY(-8px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
@@ -224,4 +247,65 @@ body {
 .widget:hover,
 .card:hover {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* Theme Button */
+#theme-toggle {
+  border: none;
+  background: #1e293b;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+#theme-toggle:hover {
+  background: #38bdf8;
+}
+
+/* Light Mode */
+body.light-mode {
+  background: #f8fafc;
+  color: #111827;
+}
+
+body.light-mode .main-content,
+body.light-mode .header {
+  background: #ffffff;
+}
+
+body.light-mode .card,
+body.light-mode .widget,
+body.light-mode .hero-banner {
+  background: #ffffff;
+  color: #111827;
+  border: 1px solid #e5e7eb;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .content-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .header {
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .search-bar input {
+    width: 100%;
+  }
 }
