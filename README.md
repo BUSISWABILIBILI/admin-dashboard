@@ -1,34 +1,30 @@
-# Admin Dashboard
+# CodePortal Admin Dashboard
 
-A responsive admin dashboard layout built using **HTML** and **CSS Grid** as part of The Odin Project Intermediate HTML and CSS course.
+A modern admin dashboard inspired by SaaS products and built with HTML, CSS Grid, Flexbox, and JavaScript.
 
-## 📌 Project Overview
+## 🚀 Features
 
-This project focuses on building a full dashboard layout using modern CSS techniques, especially **CSS Grid** for structuring the main layout and nested components.
+- Responsive dashboard layout
+- Sidebar navigation
+- Search header
+- Hero welcome section
+- Project cards
+- Announcements panel
+- Trending section
+- Animated stats cards
+- Progress chart widget
+- Dark / Light mode toggle
+- Typing text animation
 
-The goal was to practice:
-- CSS Grid layout systems
-- Nested grid structures
-- Page layout planning
-- UI composition using HTML & CSS
-
-## 🧱 Features
-
-- Sidebar navigation layout
-- Header with search and user info sections
-- Main content area with project cards
-- Announcements and trending sections
-- Clean grid-based structure
-
-## 🛠️ Built With
+## 🛠 Tech Stack
 
 - HTML5
-- CSS3 (CSS Grid + Flexbox)
-- Google Fonts (optional)
-- Material Design Icons (optional)
+- CSS3
+- CSS Grid
+- Flexbox
+- JavaScript
 
 ## 📁 Project Structure
-
 
 admin-dashboard/
 │── index.html
@@ -37,27 +33,19 @@ admin-dashboard/
 │── images/
 │── README.md
 
+## 🌍 Live Demo
 
-## 🚀 How to Run the Project
+https://busiswabilibili.github.io/admin-dashboard/
 
-1. Clone the repository:
-```bash
-git clone https://github.com/BUSISWABILIBILI/admin-dashboard.git
-Navigate into the project folder:
-cd admin-dashboard
-Open index.html in your browser.
-🎯 What I Learned
-Structuring complex layouts using CSS Grid
-Nesting grids inside grid containers
-Planning layout before writing code
-Organizing UI sections logically
-Improving CSS layout debugging skills
+## 📚 What I Learned
 
-📌 Future Improvements
-Make the dashboard fully responsive
-Add interactive elements with JavaScript
-Improve accessibility (ARIA labels, keyboard navigation)
-Add dark mode support
-📚 Acknowledgements
+- Advanced CSS Grid layouts
+- Dashboard UI structure
+- Component styling
+- DOM manipulation
+- Theme switching
+- Responsive design
 
-Built as part of The Odin Project curriculum.
+## 👨‍💻 Author
+
+Busiswa Bili-bili
