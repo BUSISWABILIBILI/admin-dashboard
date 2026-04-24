@@ -4,253 +4,305 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CodePortal Dashboard</title>
+
+    <!-- Styles -->
     <link rel="stylesheet" href="style.css" />
 
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
   </head>
 
   <body>
     <div class="dashboard">
       <!-- Sidebar -->
-      <aside class="sidebar">
-        <h2 class="logo">CodePortal</h2>
+      <aside class="sidebar" role="navigation">
+        <div class="logo-container">
+          <img src="images/logo.png" alt="CodePortal logo" class="logo-img" />
+          <h2 class="logo-text">CodePortal</h2>
+        </div>
 
         <nav>
           <ul>
-            <li>🏠 Home</li>
-            <li>👤 Profile</li>
-            <li>💬 Messages</li>
-            <li>📁 Projects</li>
-            <li>⚙ Settings</li>
+            <li>
+              <a href="#"><i data-lucide="home"></i> Home</a>
+            </li>
+            <li>
+              <a href="#"><i data-lucide="user"></i> Profile</a>
+            </li>
+            <li>
+              <a href="#"><i data-lucide="message-circle"></i> Messages</a>
+            </li>
+            <li>
+              <a href="#"><i data-lucide="folder"></i> Projects</a>
+            </li>
+            <li>
+              <a href="#"><i data-lucide="settings"></i> Settings</a>
+            </li>
           </ul>
         </nav>
       </aside>
 
-      <!-- Header -->
-      <header class="header">
-        <div class="search-bar">
-          <input type="text" placeholder="Search projects..." />
-        </div>
-
-        <div class="header-right">
-          <button id="theme-toggle">🌙</button>
-          <div class="user-info">
-            <span>🔔</span>
-            <img src="https://i.pravatar.cc/40" alt="" />
-            <h4>Asa</h4>
+      <!-- Main Area -->
+      <div class="main-area">
+        <!-- Header -->
+        <header class="header" role="banner">
+          <div class="search-bar">
+            <input
+              type="text"
+              placeholder="Search projects..."
+              aria-label="Search projects"
+            />
           </div>
 
-          <div class="header-buttons">
-            <button>New</button>
-            <button>Upload</button>
-            <button>Share</button>
+          <div class="header-right">
+            <button id="theme-toggle" aria-label="Toggle theme">
+              <i data-lucide="moon"></i>
+            </button>
+
+            <div class="user-info">
+              <button aria-label="Notifications">
+                <i data-lucide="bell"></i>
+              </button>
+              <img src="https://i.pravatar.cc/40" alt="User profile picture" />
+              <h4>Asa</h4>
+            </div>
+
+            <div class="header-buttons">
+              <button><i data-lucide="plus"></i> New</button>
+              <button><i data-lucide="upload"></i> Upload</button>
+              <button><i data-lucide="share-2"></i> Share</button>
+            </div>
           </div>
-        </div>
-      </header>
+        </header>
 
-      <!-- Main Content -->
-      <main class="main-content">
-        <section class="hero-banner">
-          <div>
-            <p>Hello there,</p>
-            <h1>Welcome Back, Asa 👋</h1>
-            <span id="typing-text"></span>
-          </div>
-        </section>
-
-        <section class="stats-grid">
-          <div class="stat-card">
-            <h3>6+</h3>
-            <p>Projects Built</p>
-          </div>
-
-          <div class="stat-card">
-            <h3>4</h3>
-            <p>Core Skills</p>
-          </div>
-
-          <div class="stat-card">
-            <h3>100%</h3>
-            <p>Dedication</p>
-          </div>
-
-          <div class="stat-card">
-            <h3>Daily</h3>
-            <p>Learning</p>
-          </div>
-        </section>
-
-        <div class="content-layout">
-          <!-- LEFT SIDE -->
-          <section class="projects-section">
-            <h2>Your Projects</h2>
-
-            <div class="projects-grid">
-              <div class="card">
-                <h3>Odin Recipes</h3>
-                <p>
-                  A simple multi-page recipe website built with HTML as part of
-                  The Odin Project Foundations course.
-                </p>
-                <div class="card-actions">
-                  <a
-                    href="https://github.com/BUSISWABILIBILI/odin-recipes"
-                    target="_blank"
-                    >GitHub</a
-                  >
-                  <a
-                    href="https://busiswabilibili.github.io/odin-recipes/"
-                    target="_blank"
-                    >Live Demo</a
-                  >
-                </div>
-              </div>
-
-              <div class="card">
-                <h3>TaskNest Productivity Page</h3>
-                <p>
-                  A modern landing page for TaskNest, a productivity app for
-                  tasks, notes, and reminders.
-                </p>
-                <div class="card-actions">
-                  <a
-                    href="https://github.com/BUSISWABILIBILI/tasknest-productivity-page"
-                    target="_blank"
-                    >GitHub</a
-                  >
-                  <a
-                    href="https://busiswabilibili.github.io/tasknest-productivity-page/"
-                    target="_blank"
-                    >Live Demo</a
-                  >
-                </div>
-              </div>
-
-              <div class="card">
-                <h3>Rock Paper Scissors</h3>
-                <p>
-                  Interactive browser game built with JavaScript using DOM
-                  manipulation and logic.
-                </p>
-                <div class="card-actions">
-                  <a
-                    href="https://github.com/BUSISWABILIBILI/rock-paper-scissors"
-                    target="_blank"
-                    >GitHub</a
-                  >
-                  <a
-                    href="https://busiswabilibili.github.io/rock-paper-scissors/"
-                    target="_blank"
-                    >Live Demo</a
-                  >
-                </div>
-              </div>
-
-              <div class="card">
-                <h3>Etch-a-Sketch</h3>
-                <p>
-                  A browser-based drawing app built with HTML, CSS, and
-                  JavaScript.
-                </p>
-                <div class="card-actions">
-                  <a
-                    href="https://github.com/BUSISWABILIBILI/etch-a-sketch"
-                    target="_blank"
-                    >GitHub</a
-                  >
-                  <a
-                    href="https://busiswabilibili.github.io/etch-a-sketch/"
-                    target="_blank"
-                    >Live Demo</a
-                  >
-                </div>
-              </div>
-
-              <div class="card">
-                <h3>Calculator</h3>
-                <p>
-                  Modern calculator built with HTML, CSS and JavaScript for The
-                  Odin Project.
-                </p>
-                <div class="card-actions">
-                  <a
-                    href="https://github.com/BUSISWABILIBILI/calculator"
-                    target="_blank"
-                    >GitHub</a
-                  >
-                  <a
-                    href="https://busiswabilibili.github.io/calculator/"
-                    target="_blank"
-                    >Live Demo</a
-                  >
-                </div>
-              </div>
-
-              <div class="card">
-                <h3>CodePortal Signup Page</h3>
-                <p>
-                  Modern developer signup page with responsive layout and clean
-                  branded UI.
-                </p>
-                <div class="card-actions">
-                  <a
-                    href="https://github.com/BUSISWABILIBILI/codeportal-signup-page"
-                    target="_blank"
-                    >GitHub</a
-                  >
-                  <a
-                    href="https://busiswabilibili.github.io/codeportal-signup-page/"
-                    target="_blank"
-                    >Live Demo</a
-                  >
-                </div>
-              </div>
+        <!-- Main Content -->
+        <main class="main-content" role="main">
+          <!-- Hero -->
+          <section class="hero-banner">
+            <div>
+              <p>Hello there,</p>
+              <h1>Welcome Back, Asa 👋</h1>
+              <span id="typing-text"></span>
             </div>
           </section>
 
-          <!-- RIGHT SIDE -->
-          <aside class="right-panel">
-            <div class="widget">
-              <h3>Announcements</h3>
-              <p>🚀 New dashboard project added.</p>
-              <p>💼 Portfolio updated this week.</p>
-              <p>🔥 Learning JavaScript daily.</p>
+          <!-- Stats -->
+          <section class="stats-grid" id="stats">
+            <div class="stat-card">
+              <h3>6</h3>
+              <p>Projects Completed</p>
             </div>
 
-            <div class="widget">
-              <h3>Trending Projects</h3>
-              <p>🔥 Calculator</p>
-              <p>🔥 Etch-a-Sketch</p>
-              <p>🔥 TaskNest</p>
+            <div class="stat-card">
+              <h3>2</h3>
+              <p>Ongoing Projects</p>
             </div>
 
-            <div class="widget">
-              <h3>Tech Stack</h3>
-              <p>HTML</p>
-              <p>CSS</p>
-              <p>JavaScript</p>
-              <p>GitHub</p>
+            <div class="stat-card">
+              <h3>4</h3>
+              <p>Core Skills</p>
             </div>
 
-            <div class="widget">
-              <h3>Progress</h3>
+            <div class="stat-card">
+              <h3>14</h3>
+              <p>Day Streak</p>
+            </div>
+          </section>
 
-              <div class="chart-bars">
-                <div class="bar html">HTML</div>
-                <div class="bar css">CSS</div>
-                <div class="bar js">JS</div>
-                <div class="bar git">Git</div>
+          <div class="content-layout">
+            <!-- Projects -->
+            <section class="projects-section" id="projects">
+              <h2>Your Projects</h2>
+
+              <div class="projects-grid">
+                <!-- Card -->
+                <article class="card">
+                  <h3>Odin Recipes</h3>
+                  <p>
+                    A multi-page recipe website built with HTML as part of The
+                    Odin Project Foundations course.
+                  </p>
+                  <div class="card-actions">
+                    <a
+                      href="https://github.com/BUSISWABILIBILI/odin-recipes"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >GitHub</a
+                    >
+                    <a
+                      href="https://busiswabilibili.github.io/odin-recipes/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Live Demo</a
+                    >
+                  </div>
+                </article>
+
+                <article class="card">
+                  <h3>TaskNest Productivity</h3>
+                  <p>
+                    A modern landing page for a productivity app with tasks,
+                    notes, and reminders.
+                  </p>
+                  <div class="card-actions">
+                    <a
+                      href="https://github.com/BUSISWABILIBILI/tasknest-productivity-page"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >GitHub</a
+                    >
+                    <a
+                      href="https://busiswabilibili.github.io/tasknest-productivity-page/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Live Demo</a
+                    >
+                  </div>
+                </article>
+
+                <article class="card">
+                  <h3>Rock Paper Scissors</h3>
+                  <p>
+                    Interactive browser game built with JavaScript using DOM
+                    manipulation.
+                  </p>
+                  <div class="card-actions">
+                    <a
+                      href="https://github.com/BUSISWABILIBILI/rock-paper-scissors"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >GitHub</a
+                    >
+                    <a
+                      href="https://busiswabilibili.github.io/rock-paper-scissors/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Live Demo</a
+                    >
+                  </div>
+                </article>
+
+                <article class="card">
+                  <h3>Etch-a-Sketch</h3>
+                  <p>
+                    A browser-based drawing app built with HTML, CSS, and
+                    JavaScript.
+                  </p>
+                  <div class="card-actions">
+                    <a
+                      href="https://github.com/BUSISWABILIBILI/etch-a-sketch"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >GitHub</a
+                    >
+                    <a
+                      href="https://busiswabilibili.github.io/etch-a-sketch/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Live Demo</a
+                    >
+                  </div>
+                </article>
+
+                <article class="card">
+                  <h3>Calculator</h3>
+                  <p>
+                    A modern calculator built with HTML, CSS, and JavaScript.
+                  </p>
+                  <div class="card-actions">
+                    <a
+                      href="https://github.com/BUSISWABILIBILI/calculator"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >GitHub</a
+                    >
+                    <a
+                      href="https://busiswabilibili.github.io/calculator/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Live Demo</a
+                    >
+                  </div>
+                </article>
+
+                <article class="card">
+                  <h3>CodePortal Signup</h3>
+                  <p>
+                    A responsive developer signup page with a clean branded UI.
+                  </p>
+                  <div class="card-actions">
+                    <a
+                      href="https://github.com/BUSISWABILIBILI/codeportal-signup-page"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >GitHub</a
+                    >
+                    <a
+                      href="https://busiswabilibili.github.io/codeportal-signup-page/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Live Demo</a
+                    >
+                  </div>
+                </article>
               </div>
-            </div>
-          </aside>
-        </div>
-      </main>
+            </section>
+
+            <!-- Right Panel -->
+            <aside class="right-panel">
+              <div class="widget">
+                <h3>Announcements</h3>
+                <p>🚀 New dashboard project added</p>
+                <p>💼 Portfolio updated</p>
+                <p>🔥 Learning JavaScript daily</p>
+              </div>
+
+              <div class="widget">
+                <h3>Trending Projects</h3>
+                <p>Calculator</p>
+                <p>Etch-a-Sketch</p>
+                <p>TaskNest</p>
+              </div>
+
+              <div class="widget">
+                <h3>Tech Stack</h3>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+                <p>GitHub</p>
+              </div>
+
+              <div class="widget">
+                <h3>Progress</h3>
+                <div class="chart-bars">
+                  <div class="bar html">HTML</div>
+                  <div class="bar css">CSS</div>
+                  <div class="bar js">JS</div>
+                  <div class="bar git">Git</div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+          <p>© 2026 CodePortal. Built by Busiswa Bili-bili.</p>
+        </footer>
+      </div>
     </div>
 
+    <!-- Scripts -->
     <script src="script.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
 </html>
