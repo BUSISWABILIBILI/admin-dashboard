@@ -19,10 +19,37 @@ body {
 
 /* Sidebar */
 .sidebar {
-  grid-row: 1/3;
-  background: linear-gradient(180deg, #1e293b, #0f172a);
-  padding: 30px 20px;
+  grid-row: 1 / 3;
+  background: linear-gradient(180deg, #111827, #0f172a);
+  padding: 30px 18px;
   border-right: 1px solid rgba(255, 255, 255, 0.05);
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.sidebar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar ul li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 10px 14px;
+  border-radius: 12px;
+}
+
+.sidebar ul li:hover {
+  background: rgba(56, 189, 248, 0.12);
+  color: #38bdf8;
+  transform: translateX(6px);
 }
 
 /* Logo */
@@ -55,27 +82,6 @@ body {
 .hero-banner span {
   color: #38bdf8;
   font-weight: 500;
-}
-
-.sidebar ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.sidebar ul li {
-  cursor: pointer;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  padding: 10px 14px;
-  border-radius: 12px;
-}
-
-.sidebar ul li:hover {
-  background: rgba(56, 189, 248, 0.12);
-  color: #38bdf8;
-  transform: translateX(6px);
 }
 
 /* Header */
